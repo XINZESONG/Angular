@@ -1,20 +1,24 @@
 .map-container {
-   position: relative;
    height:700px;
    width: 100%;
+   background-color: black;
+   padding: 50px;
 }
 
 .map {
+    position: relative;
     height: 100%;
     border: 5px solid black;
+    background-color: grey;
 }
 
 .toggle-container {
     position: absolute;
-    top:0;
-    right: 0;
-    height: 30px;
-    width: 80px;
-    border: 2px solid gray;
-    background-color: gray;
+    height: 100px;
+    width: 140px;
+    background-color: white;
+    border-radius: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
