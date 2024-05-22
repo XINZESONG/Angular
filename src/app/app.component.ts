@@ -12,7 +12,12 @@ import { CommonModule } from '@angular/common';
 export class AppComponent {
   title = 'angular';
 
+  height = 700;
+  width = 1000;
+  position_X = 100/this.width*100;
+  position_Y = 35/this.height*100;
+
   calculateStyles() {
-    return {'color': 'red',  'position':'absolute', 'right':'10%','top':'20%'}
+    return {'position':'absolute', 'right':this.position_X+'%','top':this.position_Y+'%'}
   }
 }
