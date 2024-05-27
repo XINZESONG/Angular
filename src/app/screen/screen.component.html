@@ -1,0 +1,33 @@
+<div class="tab">
+  <div
+    [ngClass]="showContent('Controls') ? 'buttonActive' : 'buttonDeactive'"
+    (click)="selectTab('Controls')"
+  >
+    Controls
+  </div>
+  <div
+    [ngClass]="showContent('Audio') ? 'buttonActive' : 'buttonDeactive'"
+    (click)="selectTab('Audio')"
+  >
+    Audio
+  </div>
+  <div
+    [ngClass]="showContent('Lights') ? 'buttonActive' : 'buttonDeactive'"
+    (click)="selectTab('Lights')"
+  >
+    Lights
+  </div>
+  <div class="tab-content">
+    <div *ngIf="showContent('Controls')">
+      <h3>Controls</h3>
+    </div>
+
+    <div *ngIf="showContent('Audio')">
+      <h3>Audio</h3>
+    </div>
+
+    <div *ngIf="showContent('Lights')">
+      <h3>Lights</h3>
+    </div>
+  </div>
+</div>
