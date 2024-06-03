@@ -1,0 +1,54 @@
+.tab {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #ccc;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  background-color: grey;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+
+/* Create an active/current "tab button" class */
+.buttonActive {
+  background-color: inherit;
+  background-color: grey;
+  padding: 22px 16px;
+  width: 30%;
+
+  font-size: 17px;
+
+  z-index: 100;
+}
+.buttonDeactive {
+  background-color: inherit;
+  background-color: grey;
+  padding: 22px 16px;
+  width: 30%;
+
+  font-size: 17px;
+
+  z-index: 0;
+}
+
+/* Style the tab content */
+.tab-content {
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  background-color: wheat;
+  z-index: 1;
+}

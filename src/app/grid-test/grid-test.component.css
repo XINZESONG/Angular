@@ -1,0 +1,50 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr); /* Adjust the number of columns */
+  grid-template-rows: repeat(10, 1fr); /* Adjust the number of rows */
+  gap: 2px; /* Adjust the gap between squares */
+  width: 80vmin; /* Adjust the size of the grid */
+  height: 80vmin; /* Maintain aspect ratio for squares */
+  border: 1px solid #ccc;
+  position: relative;
+}
+.grid-item {
+  background-color: black;
+  border: 1px solid black;
+}
+
+.bubble {
+  position: absolute;
+  height: 80px;
+  width: 120px;
+  background-color: red;
+}
+
+@media (max-width: 1024px) {
+  .bubble {
+    position: absolute;
+    height: 40px;
+    width: 60px;
+    background-color: red;
+  }
+}
+
+/* Medium devices (tablets, 600px to 768px) */
+@media (max-width: 1280px) {
+  .bubble {
+    position: absolute;
+    height: 40px;
+    width: 60px;
+    background-color: red;
+  }
+}
+
+/* Large devices (desktops, 769px and up) */
+@media (min-width: 1920px) {
+  .bubble {
+    position: absolute;
+    height: 40px;
+    width: 60px;
+    background-color: red;
+  }
+}
