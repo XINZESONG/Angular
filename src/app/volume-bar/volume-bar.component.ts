@@ -5,8 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './volume-bar.component.html',
-  styleUrl: './volume-bar.component.css'
+  styleUrl: './volume-bar.component.css',
 })
-export class VolumeBarComponent {
-
-}
+export class VolumeBarComponent {}
